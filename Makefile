@@ -38,7 +38,7 @@ $(TARGET): $(OBJECTS)
 
 
 clean:
-	rm -f $(OBJECTS)
+	rm -f $(OBJECTS) $(DEPS)
 
 
 -include $(DEPS)
