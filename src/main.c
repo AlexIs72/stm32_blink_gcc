@@ -56,7 +56,7 @@ int main() {
     led_init_gpio();
     
     // Инициализируем таймер SysTick чтобы он срабатывал каждую /*милли*/секунду
-    SysTick_Config(RCC_Clocks.HCLK_Frequency / 10/*00 */);
+    SysTick_Config(RCC_Clocks.HCLK_Frequency / 10/*00*/ );
     
     while(1) {
         asm("nop");
